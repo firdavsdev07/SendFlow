@@ -35,6 +35,10 @@
 }
 
 body {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
   font-family: 'Times New Roman', Times, serif;
-  background-color:#f7f7f7 ;
 }

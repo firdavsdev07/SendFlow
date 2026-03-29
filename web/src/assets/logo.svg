@@ -1,0 +1,87 @@
+<svg width="200" height="260" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="gArc" x1="20" y1="0" x2="180" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#6c63ff"/>
+    <stop offset="100%" stop-color="#00d4ff"/>
+  </linearGradient>
+  <linearGradient id="gNode" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#8b85ff"/>
+    <stop offset="100%" stop-color="#5a52e0"/>
+  </linearGradient>
+  <linearGradient id="gNodeR" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#33ddff"/>
+    <stop offset="100%" stop-color="#00aed4"/>
+  </linearGradient>
+  <filter id="glowL" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowS" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    @keyframes dash { to { stroke-dashoffset: -20 } }
+    @keyframes blink { 0%,100%{opacity:0.25} 50%{opacity:0.9} }
+    .d1 { stroke-dasharray:5 5; animation: dash 1.8s linear infinite 0s }
+    .d2 { stroke-dasharray:5 5; animation: dash 1.8s linear infinite 0.6s }
+    .d3 { stroke-dasharray:5 5; animation: dash 1.8s linear infinite 1.2s }
+    .b1 { animation: blink 2.4s ease-in-out infinite 0s }
+    .b2 { animation: blink 2.4s ease-in-out infinite 0.8s }
+    .b3 { animation: blink 2.4s ease-in-out infinite 1.6s }
+  </style>
+</defs>
+
+<!-- regular hexagon centered at 100,100, width=height=200 -->
+<polygon
+  points="100,12 188,56 188,144 100,188 12,144 12,56"
+  fill="none" stroke="url(#gArc)" stroke-width="1.5" opacity="0.35"/>
+
+<!-- arc over hex -->
+<path d="M 18 100 Q 100 -18 182 100"
+  fill="none" stroke="url(#gArc)" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- ghost arc lower -->
+<path d="M 18 100 Q 100 168 182 100"
+  fill="none" stroke="url(#gArc)" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+
+<!-- left peer node -->
+<circle cx="18" cy="100" r="18" fill="url(#gNode)" opacity="0.12"/>
+<circle cx="18" cy="100" r="12" fill="url(#gNode)" filter="url(#glowL)"/>
+<circle cx="18" cy="100" r="4.5" fill="white" opacity="0.95"/>
+
+<!-- right peer node -->
+<circle cx="182" cy="100" r="18" fill="url(#gNodeR)" opacity="0.12"/>
+<circle cx="182" cy="100" r="12" fill="url(#gNodeR)" filter="url(#glowL)"/>
+<circle cx="182" cy="100" r="4.5" fill="white" opacity="0.95"/>
+
+<!-- 3 data stream lines inside hex -->
+<line class="d1" x1="84" y1="46" x2="84" y2="158" stroke="#6c63ff" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+<line class="d2" x1="100" y1="38" x2="100" y2="164" stroke="url(#gArc)" stroke-width="2.2" stroke-linecap="round" opacity="0.7"/>
+<line class="d3" x1="116" y1="46" x2="116" y2="158" stroke="#00d4ff" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+
+<!-- arrow on center stream -->
+<path d="M 91 148 L 100 164 L 109 148"
+  fill="none" stroke="#00d4ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- arrow on arc -->
+<path d="M 162 42 L 182 100 L 152 72"
+  fill="none" stroke="#00d4ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- lock badge center -->
+<rect x="88" y="90" width="24" height="18" rx="5" fill="#6c63ff" opacity="0.15"/>
+<rect x="88" y="90" width="24" height="18" rx="5" fill="none" stroke="url(#gArc)" stroke-width="1.2"/>
+<path d="M 91 90 Q 91 80 100 80 Q 109 80 109 90"
+  fill="none" stroke="url(#gArc)" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="100" cy="98" r="2.5" fill="url(#gArc)"/>
+<rect x="98.8" y="98" width="2.5" height="5" rx="1.2" fill="#00d4ff"/>
+
+<!-- blink dots top -->
+<circle class="b1" cx="84" cy="52" r="3.5" fill="#6c63ff"/>
+<circle class="b2" cx="100" cy="44" r="4.5" fill="url(#gArc)"/>
+<circle class="b3" cx="116" cy="52" r="3.5" fill="#00d4ff"/>
+
+<!-- packet dots on arc -->
+<circle cx="52" cy="42" r="3" fill="#6c63ff" opacity="0.5" filter="url(#glowS)"/>
+<circle cx="148" cy="42" r="3" fill="#00d4ff" opacity="0.5" filter="url(#glowS)"/>
+</svg>
