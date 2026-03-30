@@ -3,12 +3,14 @@ import logo from "../assets/logo.svg";
 
 function Navbar() {
   return (
-    <div className="flex fixed w-full z-100 bg-white justify-between items-center px-16 py-6 border-b border-border-color">
+    <div className="flex fixed w-full z-100 bg-white justify-between items-center px-16 py-2 border-b border-border-color">
       <ul className="menu flex gap-12 items-center">
         <li className="menu-item flex items-center">
           <a href="/" className="flex items-center gap-3">
-            <img src={logo} alt="SendFlow" className="w-12 h-12" />
-            {/* <span className="text-violet font-bold text-4xl">SendFlow</span> */}
+            <img src={logo} alt="SendFlow" className="w-20 h-20" />
+            <span className="font-bold text-3xl bg-linear-to-r from-violet-500 to-cyan-500 bg-clip-text text-transparent">
+              SendFlow
+            </span>
           </a>
         </li>
         <li className="minu-item text-2xl text-text-muted font-medium cursor-pointer ">

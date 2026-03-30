@@ -9,8 +9,8 @@ function Footer() {
       <div className="flex justify-between items-start">
         {/* Logo & desc */}
         <div className="max-w-xs">
-          <a href="/" className="flex items-center gap-3 mb-4">
-            <img src={logo} alt="SendFlow" className="w-10 h-10" />
+          <a href="/" className="flex items-center justify-start gap-2  mb-4">
+            <img src={logo} alt="SendFlow" className="w-20 h-20" />
             <span className="text-violet font-bold text-3xl">SendFlow</span>
           </a>
           <p className="text-text-muted text-lg italic">

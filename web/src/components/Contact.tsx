@@ -56,8 +56,8 @@ function Contact() {
           viewport={{ once: true }}
           className="bg-white rounded-4xl shadow-sm p-10 flex flex-col gap-6"
         >
-          <div className="flex items-center gap-3 mb-2">
-            <img src={logo} alt="SendFlow" className="w-8 h-8" />
+          <div className="flex items-center gap-2 mb-2">
+            <img src={logo} alt="SendFlow" className="w-15 h-15" />
             <span className="font-bold text-xl text-violet">SendFlow</span>
           </div>
 
