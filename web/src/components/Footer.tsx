@@ -5,6 +5,7 @@ function Footer() {
     <footer
       style={{ backgroundColor: "#faf0ff" }}
       className="px-30 py-16 mt-10"
+      
     >
       <div className="flex justify-between items-start">
         {/* Logo & desc */}
