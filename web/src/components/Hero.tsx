@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Users, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -57,14 +58,17 @@ function Hero() {
           custom={0.3}
           className="flex items-center py-12 gap-4 font-medium"
         >
-          <a
-            href="#"
+          <Link
+            to="/auth/login"
             className="flex items-center shadow-sm gap-3 rounded-full text-2xl bg-linear-to-r from-violet to-cyan py-3 px-5 cursor-pointer transition-opacity duration-200 hover:opacity-85"
           >
             <span>Start Sharing</span>
             <ArrowRight className="text-white" />
-          </a>
-          <a href="#" className="text-2xl transition-opacity duration-200 hover:opacity-60">
+          </Link>
+          <a
+            href="#"
+            className="text-2xl transition-opacity duration-200 hover:opacity-60"
+          >
             How It Works
           </a>
         </motion.div>
@@ -88,7 +92,10 @@ function Hero() {
           </div>
           <p className="font-bold">
             <span>12k+</span>
-            <span className="text-text-muted"> people sharing securely today</span>
+            <span className="text-text-muted">
+              {" "}
+              people sharing securely today
+            </span>
           </p>
         </motion.div>
       </div>
@@ -105,7 +112,9 @@ function Hero() {
             <div className="bg-indigo-300 p-2 rounded-xl">
               <Users className="text-white" />
             </div>
-            <h3 className="text-white text-2xl font-bold pt-4 pb-2">Create Room</h3>
+            <h3 className="text-white text-2xl font-bold pt-4 pb-2">
+              Create Room
+            </h3>
             <p className="text-border-color font-bold">Ready to sync</p>
           </motion.div>
 
@@ -134,7 +143,9 @@ function Hero() {
             <div className="bg-indigo-300 p-2 rounded-xl">
               <Users className="text-white" />
             </div>
-            <h3 className="text-white text-2xl font-bold pt-4 pb-2">Lightning Speed</h3>
+            <h3 className="text-white text-2xl font-bold pt-4 pb-2">
+              Lightning Speed
+            </h3>
             <p className="text-border-color font-bold">Ready to sync</p>
           </motion.div>
         </div>

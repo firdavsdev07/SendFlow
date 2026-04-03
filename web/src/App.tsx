@@ -1,24 +1,28 @@
 import "./App.css";
-import Hero from "./components/Hero";
-import Process from "./components/Process";
-import Navbar from "./components/Navbar";
-import CardStack from "./components/CardStack";
-import Promo from "./components/Promo";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { routes } from "./routes/routes";
 function App() {
   return (
     <>
-      <Navbar />
-      <main className="px-30 pt-50">
-        <Hero />
-        <CardStack />
-        <Process />
-        <Promo />
-        <Contact />
-      </main>
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          {routes.map((route) => (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={<route.component />}
+            >
+              {route.children?.map((child) => (
+                <Route
+                  key={child.path}
+                  path={child.path}
+                  element={<child.component />}
+                />
+              ))}
+            </Route>
+          ))}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -62,7 +62,9 @@ function Process() {
         <div className="w-20 h-20 bg-[#faf7fc] p-2 rounded-xl flex items-center justify-center">
           <Lock className="w-10 h-10 text-black" />
         </div>
-        <h2 className="text-4xl font-semibold py-6">Military Grade Encryption</h2>
+        <h2 className="text-4xl font-semibold py-6">
+          Military Grade Encryption
+        </h2>
         <p className="text-xl text-text-muted">
           Every byte is encrypted in your browser before it even starts <br />
           traveling. Only you and your peer hold the keys.

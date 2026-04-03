@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CircleCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -47,14 +48,14 @@ function Promo() {
         viewport={{ once: true }}
         className="mt-10 flex flex-wrap justify-center gap-4"
       >
-        <a
-          href="#"
+        <Link
+          to="/auth/login"
           className="flex items-center gap-3 rounded-full bg-white px-6 py-4
           text-xl font-semibold text-violet transition-opacity duration-200 hover:opacity-85"
         >
           Get Started for Free
           <ArrowRight className="w-5 h-5" />
-        </a>
+        </Link>
         <a
           href="#"
           className="flex items-center gap-3 rounded-full border border-white
