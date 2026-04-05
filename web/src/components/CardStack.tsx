@@ -28,7 +28,7 @@ function CardStack() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="bg-fuchsia-200 border border-violet text-violet font-bold px-8 py-0.5 rounded-full"
+          className="glass-effect premium-shadow text-violet font-bold px-8 py-2 rounded-full"
         >
           The Process
         </motion.h6>
@@ -65,7 +65,7 @@ function CardStack() {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          <div className="icon bg-mint p-6 rounded-xl">
+          <div className="icon bg-mint p-6 rounded-xl premium-shadow transition-transform duration-300 hover:scale-110">
             <Users className="text-white w-12 h-12" />
           </div>
           <h6 className="text-lg pt-4 text-text-muted font-bold">STEP 01</h6>
@@ -76,7 +76,7 @@ function CardStack() {
         </motion.div>
 
         <div className="flex flex-col justify-center items-center">
-          <div className="bg-cyan w-10 h-0.5"></div>
+          <div className="bg-gradient-to-r from-mint to-cyan w-10 h-0.5 shadow-sm"></div>
         </div>
 
         {/* Step 02 */}
@@ -88,7 +88,7 @@ function CardStack() {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          <div className="icon bg-cyan p-6 rounded-xl">
+          <div className="icon bg-cyan p-6 rounded-xl premium-shadow transition-transform duration-300 hover:scale-110">
             <Send className="text-white w-12 h-12" />
           </div>
           <h6 className="text-lg pt-4 text-text-muted font-bold">STEP 02</h6>
@@ -98,7 +98,7 @@ function CardStack() {
           </p>
         </motion.div>
 
-        <div className="w-170 h-170 absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 border-2 border-dashed border-fuchsia-200 rounded-full"></div>
+        <div className="w-170 h-170 absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 border-2 border-dashed border-violet/30 rounded-full"></div>
 
         {/* Center card */}
         <motion.div
@@ -106,12 +106,12 @@ function CardStack() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col gap-2 justify-center items-center bg-white shadow-xl rounded-4xl h-50 w-50"
+          className="flex flex-col gap-2 justify-center items-center glass-effect premium-shadow-lg rounded-4xl h-50 w-50 transition-transform duration-300 hover:scale-105"
         >
           <img
             src="https://plus.unsplash.com/premium_photo-1661602011150-6c6f8b9ba788?w=500&auto=format&fit=crop&q=60"
             alt="#img"
-            className="w-30 h-30 object-cover rounded-2xl"
+            className="w-30 h-30 object-cover rounded-2xl shadow-md"
           />
           <h2 className="text-2xl font-bold">You</h2>
         </motion.div>
@@ -125,7 +125,7 @@ function CardStack() {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          <div className="icon bg-violet p-6 rounded-xl">
+          <div className="icon bg-violet p-6 rounded-xl premium-shadow transition-transform duration-300 hover:scale-110">
             <ShieldCheck className="text-white w-12 h-12" />
           </div>
           <h6 className="text-lg pt-4 text-text-muted font-bold">STEP 03</h6>
@@ -136,7 +136,7 @@ function CardStack() {
         </motion.div>
 
         <div className="flex flex-col justify-center items-center">
-          <div className="bg-linear-to-r from-violet-500 to-cyan-500 w-10 h-0.5"></div>
+          <div className="bg-gradient-to-r from-violet to-coral w-10 h-0.5 shadow-sm"></div>
         </div>
 
         {/* Step 04 */}
@@ -148,7 +148,7 @@ function CardStack() {
           viewport={{ once: true }}
           className="flex flex-col items-center"
         >
-          <div className="icon bg-coral p-6 rounded-xl">
+          <div className="icon bg-coral p-6 rounded-xl premium-shadow transition-transform duration-300 hover:scale-110">
             <Download className="text-white w-12 h-12" />
           </div>
           <h6 className="text-lg pt-4 text-text-muted font-bold">STEP 04</h6>

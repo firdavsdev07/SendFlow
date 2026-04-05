@@ -17,6 +17,7 @@ function App() {
                   key={child.path}
                   path={child.path}
                   element={<child.component />}
+                  index={child.index}
                 />
               ))}
             </Route>

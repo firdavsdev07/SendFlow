@@ -19,10 +19,10 @@ function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="border border-border-color rounded-full w-80 flex justify-center items-center gap-4 py-1.5 px-1 mb-10"
+          className="glass-effect premium-shadow rounded-full w-80 flex justify-center items-center gap-4 py-2 px-2 mb-10"
         >
-          <Zap className="text-coral" />
-          <span className="font-medium">⚡ P2P • Zero Storage • Encrypted</span>
+          <Zap className="text-coral drop-shadow-lg" />
+          <span className="font-semibold">⚡ P2P • Zero Storage • Encrypted</span>
         </motion.h5>
 
         <motion.h1
@@ -60,14 +60,14 @@ function Hero() {
         >
           <Link
             to="/auth/login"
-            className="flex items-center shadow-sm gap-3 rounded-full text-2xl bg-linear-to-r from-violet to-cyan py-3 px-5 cursor-pointer transition-opacity duration-200 hover:opacity-85"
+            className="flex animated-gradient items-center gap-3 rounded-full text-2xl py-4 px-7 cursor-pointer transition-all duration-300 hover:opacity-90 premium-shadow-lg hover:shadow-2xl"
           >
-            <span>Start Sharing</span>
+            <span className="text-white font-semibold">Start Sharing</span>
             <ArrowRight className="text-white" />
           </Link>
           <a
             href="#"
-            className="text-2xl transition-opacity duration-200 hover:opacity-60"
+            className="text-2xl font-semibold transition-all duration-300 hover:text-violet"
           >
             How It Works
           </a>
@@ -107,15 +107,15 @@ function Hero() {
             initial="hidden"
             animate="visible"
             custom={0.1}
-            className="absolute shadow-lg top-0 left-0 z-30 flex flex-col justify-center items-start pl-6 w-70 h-50 bg-violet rounded-4xl"
+            className="absolute premium-shadow-lg top-0 left-0 z-30 flex flex-col justify-center items-start pl-6 w-70 h-50 bg-violet rounded-4xl transition-transform duration-300 hover:scale-105"
           >
-            <div className="bg-indigo-300 p-2 rounded-xl">
+            <div className="bg-indigo-300 p-2 rounded-xl shadow-lg">
               <Users className="text-white" />
             </div>
             <h3 className="text-white text-2xl font-bold pt-4 pb-2">
               Create Room
             </h3>
-            <p className="text-border-color font-bold">Ready to sync</p>
+            <p className="text-indigo-200 font-semibold">Ready to sync</p>
           </motion.div>
 
           <motion.div
@@ -123,13 +123,13 @@ function Hero() {
             initial="hidden"
             animate="visible"
             custom={0.3}
-            className="absolute shadow-lg top-[20%] w-[80%] z-20 h-65 bg-cyan-400 rounded-4xl p-6"
+            className="absolute premium-shadow-lg top-[20%] w-[80%] z-20 h-65 bg-cyan-400 rounded-4xl p-6 transition-transform duration-300 hover:scale-105"
           >
-            <div className="absolute top-4 right-4 bg-cyan-300 text-white text-sm px-3 py-1 rounded-full">
+            <div className="absolute top-4 right-4 bg-cyan-300 text-white text-sm font-bold px-3 py-1 rounded-full shadow-md">
               78%
             </div>
-            <div className="w-full h-2 bg-white/40 rounded-full mt-28 overflow-hidden">
-              <div className="h-full w-[78%] bg-white rounded-full"></div>
+            <div className="w-full h-2 bg-white/40 rounded-full mt-28 overflow-hidden shadow-inner">
+              <div className="h-full w-[78%] bg-white rounded-full shadow-lg"></div>
             </div>
           </motion.div>
 
@@ -138,15 +138,15 @@ function Hero() {
             initial="hidden"
             animate="visible"
             custom={0.5}
-            className="absolute shadow-lg bottom-0 right-15 z-10 flex flex-col justify-center items-start pl-6 w-70 h-40 bg-coral rounded-4xl"
+            className="absolute premium-shadow-lg bottom-0 right-15 z-10 flex flex-col justify-center items-start pl-6 w-70 h-40 bg-coral rounded-4xl transition-transform duration-300 hover:scale-105"
           >
-            <div className="bg-indigo-300 p-2 rounded-xl">
+            <div className="bg-red-400 p-2 rounded-xl shadow-lg">
               <Users className="text-white" />
             </div>
             <h3 className="text-white text-2xl font-bold pt-4 pb-2">
               Lightning Speed
             </h3>
-            <p className="text-border-color font-bold">Ready to sync</p>
+            <p className="text-red-100 font-semibold">Ready to sync</p>
           </motion.div>
         </div>
       </div>

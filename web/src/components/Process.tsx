@@ -29,7 +29,7 @@ function Process() {
         viewport={{ once: true }}
         className="lg:col-span-3"
       >
-        <h6 className="bg-orange-100 w-30 text-sm text-center text-coral border border-orange-200 font-semibold py-0.5 rounded-full">
+        <h6 className="glass-effect premium-shadow w-30 text-sm text-center text-coral font-bold py-2 rounded-full">
           Core Principles
         </h6>
         <h1 className="text-7xl py-6">
@@ -57,10 +57,10 @@ function Process() {
         whileInView="visible"
         custom={0.1}
         viewport={{ once: true }}
-        className="lg:col-span-3 shadow-sm box-border p-8 bg-[#f5f2fa] rounded-4xl border-violet"
+        className="lg:col-span-3 premium-shadow-lg box-border p-8 glass-effect rounded-4xl transition-transform duration-300 hover:scale-105"
       >
-        <div className="w-20 h-20 bg-[#faf7fc] p-2 rounded-xl flex items-center justify-center">
-          <Lock className="w-10 h-10 text-black" />
+        <div className="w-20 h-20 bg-violet/10 p-2 rounded-xl flex items-center justify-center shadow-md">
+          <Lock className="w-10 h-10 text-violet" />
         </div>
         <h2 className="text-4xl font-semibold py-6">
           Military Grade Encryption
@@ -78,10 +78,10 @@ function Process() {
         whileInView="visible"
         custom={0.1}
         viewport={{ once: true }}
-        className="lg:col-span-2 shadow-sm bg-[#edfafa] rounded-4xl my-6 p-8"
+        className="lg:col-span-2 premium-shadow glass-effect rounded-4xl my-6 p-8 transition-transform duration-300 hover:scale-105"
       >
-        <div className="w-20 h-20 bg-[#f2fbfc] p-2 rounded-xl flex items-center justify-center">
-          <Infinity className="w-10 h-10 text-black" />
+        <div className="w-20 h-20 bg-cyan/10 p-2 rounded-xl flex items-center justify-center shadow-md">
+          <Infinity className="w-10 h-10 text-cyan" />
         </div>
         <h2 className="text-4xl font-semibold py-6">No File Limits</h2>
         <p className="text-xl text-text-muted">
@@ -97,10 +97,10 @@ function Process() {
         whileInView="visible"
         custom={0.2}
         viewport={{ once: true }}
-        className="lg:col-span-2 shadow-sm bg-[#f5f4f2] rounded-4xl my-6 p-8"
+        className="lg:col-span-2 premium-shadow glass-effect rounded-4xl my-6 p-8 transition-transform duration-300 hover:scale-105"
       >
-        <div className="w-20 h-20 bg-[#faf9f7] p-2 rounded-xl flex items-center justify-center">
-          <Clock className="w-10 h-10 text-black" />
+        <div className="w-20 h-20 bg-mint/10 p-2 rounded-xl flex items-center justify-center shadow-md">
+          <Clock className="w-10 h-10 text-mint" />
         </div>
         <h2 className="text-4xl font-semibold py-6">One-time Rooms</h2>
         <p className="text-xl text-text-muted">
@@ -116,10 +116,10 @@ function Process() {
         whileInView="visible"
         custom={0.3}
         viewport={{ once: true }}
-        className="lg:col-span-2 shadow-sm bg-[#faf1f0] rounded-4xl my-6 p-8"
+        className="lg:col-span-2 premium-shadow glass-effect rounded-4xl my-6 p-8 transition-transform duration-300 hover:scale-105"
       >
-        <div className="w-20 h-20 bg-[#fcf7f7] p-2 rounded-xl flex items-center justify-center">
-          <Activity className="w-10 h-10 text-black" />
+        <div className="w-20 h-20 bg-coral/10 p-2 rounded-xl flex items-center justify-center shadow-md">
+          <Activity className="w-10 h-10 text-coral" />
         </div>
         <h2 className="text-4xl font-semibold py-6">Live Progress</h2>
         <p className="text-xl text-text-muted pb-20">
@@ -135,10 +135,10 @@ function Process() {
         whileInView="visible"
         custom={0.1}
         viewport={{ once: true }}
-        className="lg:col-span-3 shadow-sm box-border p-8 bg-[#edfafa] rounded-4xl border-violet"
+        className="lg:col-span-3 premium-shadow-lg box-border p-8 glass-effect rounded-4xl transition-transform duration-300 hover:scale-105"
       >
-        <div className="w-20 h-20 bg-[#f2fbfc] p-2 rounded-xl flex items-center justify-center">
-          <UserMinus className="w-10 h-10 text-black" />
+        <div className="w-20 h-20 bg-cyan/10 p-2 rounded-xl flex items-center justify-center shadow-md">
+          <UserMinus className="w-10 h-10 text-cyan" />
         </div>
         <h2 className="text-4xl font-semibold py-6">No Account Needed</h2>
         <p className="text-xl text-text-muted pb-30">
@@ -154,10 +154,10 @@ function Process() {
         whileInView="visible"
         custom={0.2}
         viewport={{ once: true }}
-        className="lg:col-span-3 shadow-sm bg-[#faf1f0] rounded-4xl p-8"
+        className="lg:col-span-3 premium-shadow glass-effect rounded-4xl p-8 transition-transform duration-300 hover:scale-105"
       >
-        <div className="w-20 h-20 bg-[#fcf7f7] p-2 rounded-xl flex items-center justify-center">
-          <Users className="w-10 h-10 text-black" />
+        <div className="w-20 h-20 bg-violet/10 p-2 rounded-xl flex items-center justify-center shadow-md">
+          <Users className="w-10 h-10 text-violet" />
         </div>
         <h2 className="text-4xl font-semibold py-6">Multi-Recipient</h2>
         <p className="text-xl text-text-muted">
