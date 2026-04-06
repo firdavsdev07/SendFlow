@@ -1,4 +1,15 @@
-function StatsCard({ title, value, trend, icon: Icon, iconBg, iconColor }) {
+import { type ComponentType } from "react";
+
+interface StatsCardProps {
+  title: string;
+  value: string | number;
+  trend: string;
+  icon: ComponentType<{ className?: string }>;
+  iconBg: string;
+  iconColor: string;
+}
+
+function StatsCard({ title, value, trend, icon: Icon, iconBg, iconColor }: StatsCardProps) {
   return (
     <div className="glass-effect premium-shadow rounded-3xl p-6">
       <div className="flex items-center justify-between mb-2">
